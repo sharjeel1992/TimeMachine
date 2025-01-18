@@ -1,11 +1,15 @@
 # TimeMachine
 Purpose
-This programming assignment will provide exercises in designing classes with proper abstraction and encapsulation. Encapsulation and abstraction are key components of the C++ programming language as well as OOP in general. In addition, the programming assignment will require understanding of operator overloading and some use of the friend concept.
+
+This programming assignment will provide exercises in designing classes with proper abstraction and encapsulation. 
+
 Problem: TimeSpan
 Design and implement a TimeSpan class which represents a duration of time in hours, minutes,
 and seconds. The order hours, minutes, and seconds should be respected in the constructor.
+
 As an example
 TimeSpan duration(1, 2, 3);
+
 is a duration of time of 1 hour, 2 minutes and 3 seconds.
 In the instances of the TimeSpan class you should store the values as integers in a normalized
 way. The number of seconds should be between -60 and 60; number of minutes should be
@@ -18,8 +22,7 @@ int getSeconds() const: return the number of Seconds as an int
 bool setTime(double hours, double minutes, double seconds): set the number of hours, minutes, seconds and return true if successful.
 Constructors
 The class should define constructor(s) that receive various primitive types (specifically
-int, float, and double) and converts them to Int. Do appropriate rounding to maintain as much
-accuracy as possible. A few examples:
+int, float, and double) and converts them to Int. A few examples:
 TimeSpan(1.5, 4, -10) represents 1 hour, 33 minutes, 50 seconds.
 TimeSpan(1, -380, 24.5) represents -5 hour, -19 minutes, -36 seconds.
 TimeSpan(-40, 50, -20) represents -39 hour, -10 minutes, -20 seconds.
